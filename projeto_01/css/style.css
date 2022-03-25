@@ -13,7 +13,8 @@ html, body{
 }
 
 .center{
-    width: 1200px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -22,6 +23,7 @@ html, body{
 .header{
     width: 100%;
     height: 60px;
+    padding: 0 2%;
     background-color: #212343;
 }
 
@@ -35,6 +37,7 @@ html, body{
 .container-banner{
     width: 100%;
     height: 557px;
+    padding: 0 2%;
     background-image: url('../img/header_bg.png');
     background-size: cover;
     background-position: center;
@@ -42,6 +45,7 @@ html, body{
 
 .container-banner > .center{
     height: 100%;
+
 }
 
 /****** FORMULARIO *********/
@@ -62,25 +66,32 @@ html, body{
 }
 
 .form h2{
-    font-weight: lighter;
+    font-weight: normal;
     color: #999999;
     font-size: 24px;
+}
+
+.form p{
+    margin: 20px 0;
 }
 
 .input-container{
     margin-top: 20px;
 }
 
-.input-container span,.form p{
+.input-container span{
     display: inline-block;
     width: 100%;
     color: #bbbbbb;
     font-size: 17px;
-    font-weight: 500;
 }
 
 .form p{
-    margin: 20px 0;
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+	margin:20px 0;
 }
 
 .input-container input[type=text]{
@@ -96,7 +107,6 @@ html, body{
 }
 
 .form input[type=submit]{
-   
     color: white;
     font-size: 25px;
     width: 280px;
@@ -114,6 +124,7 @@ html, body{
     background-color: #323665;
 }
 
+/******* Container **************/
 .container-list{
     
     padding: 30px;
@@ -129,14 +140,14 @@ html, body{
 }
 
 .container-list ul li{
-    margin-top: 20px;
+    margin-top: 18px;
     color: white;
 }
 
 /***** Container 2 *******/
 
 .container-2{
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #DDDDDD;
     text-align: center;
 }
@@ -146,7 +157,8 @@ html, body{
 }
 
 .container-2 p{
-    width: 698px;
+    width: 100%;
+    max-width: 768px;
     margin: 15px 0;
     display: inline-block;
     text-align: justify;
@@ -166,7 +178,7 @@ html, body{
 /******* Section 1 ********/
 
 .section-1{
-    padding: 90px 0;
+    padding: 90px 2%;
 }
 
 .section-1 h2{
@@ -186,4 +198,108 @@ html, body{
 .container-single{
     float: left;
     width:33.3%;
+    padding: 30px;
+}
+
+.container-single p{
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+.container-section img{
+    width: 70px;
+}
+
+/**********************/
+
+.footer{
+    
+    padding: 20px 0;
+    border-top: 2px solid #462663; /*coloquei a cor diferente da recomendada, particularmente o roxo ficou melhor*/
+    text-align: center;
+    color: #bbbbbb;
+    font-size: 18px; /* coloquei font size */
+
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+/****** Media *******/
+
+
+@media screen and (max-width:1024px){
+    .header{
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    header img{
+        margin: 0;
+    }
+
+    .container-list{
+        padding: 30px 0;
+        width: 40%;
+        max-width: 500px;
+        display: inline-block;
+        height: auto;
+        float:left; 
+
+    }
+
+    .container-banner{
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+
+    
+    }
+
+    .form{
+        max-width: 400px;
+        padding: 10px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;  
+    }
+
+
+    .input-container input[type=text]{
+        width: 100%;
+        height: 55px;
+    }
+    
+    .form input[type=submit]{
+        color: white;
+        font-size: 25px;
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .form{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+
+    }
 }

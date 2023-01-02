@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+body{
+    overflow-x:hidden ;
+    background: rgb(224, 224, 224) 
+}
+
+.clear{
+    clear:both;
+}
+
+/*****Header do site***********/
+
+header{
+    background-image: url('../img/bg.jpg');
+    min-height: 450px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;  
+}
+
+.logo{
+    position: relative;
+    z-index: 2;
+    background-image: url('../img/logo.png');
+    background-size: 100% 100%;
+    float: left;
+    width: 132px;
+    height: 20px;
+}
+
+/*********Menu desktop*****************/
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li.btn-nav{
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+/***************************************/
+
+/**********Menu Mobile ****************/
+
+nav.mobile{
+ 
+    display: none;
+    float: right;
+}
+
+nav.mobile h3{
+    position: relative;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+nav.mobile ul{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 70px 0 30px 0; 
+    top: 0;
+    background: #31475e;
+    display: none;
+    text-align: center;
+}
+
+nav.mobile li{
+    padding: 10px 0;
+}
+
+nav.mobile li.btn-nav{
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+nav.mobile a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+/***************************************/
+
+div.chamada-header{
+    padding:110px 0;
+}
+
+div.chamada-header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+}
+
+div.chamada-header p{
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+div.chamda-header form{
+    margin-top: 10px;
+}
+
+div.chamada-header input[type=email]{
+    display: inline-block;
+    border-radius: 20px;
+    background: white;
+    width: 237px;
+    height: 35px;
+    border: 0;
+    padding-left: 10px;
+}
+
+div.chamada-header input[type=email]:focus{
+    outline: 0;
+}
+
+div.chamada-header input[type=submit]{
+    width: 181px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: #ff5f27;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+/*********Descrição-Danki**************/
+
+section.descricao-danki{
+    text-align: center;
+    padding: 30px 0;
+}
+
+section.descricao-danki p{
+    display: inline-block;
+    max-width: 680px;
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/*********Descrição-Danki2**************/
+
+section.descricao-danki2{
+    padding: 50px 0;
+}
+
+section.descricao-danki2 > .container{
+    background: green;
+    max-width: 960px;
+
+
+}
+
+.texto-descricao{
+    float: left;
+    padding: 0 15px;
+    width: 55%;
+}
+
+.texto-descricao h3{
+    color: #31475e;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.texto-descricao p{
+    margin-top: 15px;
+    color: #5a7c92;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.descricao-danki2 img{
+    float: left;
+    width: 45%; 
+    max-width: 500px;
+}
+
+/*********Descrição-Danki3**************/
+
+section.descricao-danki3{
+    padding: 30px 0 60px 0;
+}
+
+section.descricao-danki3 > .container {
+    max-width: 960px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+} 
+
+.box-depoimento{
+    position: absolute;
+    left: 50%;
+    bottom:-30px;
+    width: 70%;
+    max-width:506px;
+    background: white;
+    padding: 10px 30px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}   
+
+.box-depoimento p{
+    font-size: 18px;
+    color: #31475e;
+    font-weight: lighter;
+}
+
+/*****************Serviços****************/
+
+section.servicos{
+    padding: 25px;
+}
+
+section.servicos > .container{
+    max-width: 1100px;
+}
+
+.title-servicos{
+    text-align: center;
+}
+
+.title-servicos h3{
+    color: #31475e;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.flex-servicos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-servicos{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    background: white;
+    width: 33.3%;
+}
+
+.box-servicos img{
+    width: 100%;
+}
+
+.box-servicos-wraper{
+    padding: 20px;
+}
+
+.box-servicos-wraper h2{
+    color: #31475e;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.box-servicos-wraper p{
+    margin: 8px 0;
+    line-height: 1.6;
+    font-weight: lighter;
+    color: #6a7c92;
+    font-size: 15px;
+}
+
+.box-servicos-wraper a{
+    display: inline-block;
+    border: 1px solid #6a7c92;
+    color: #6a7c92;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+@media screen and(max-width: 1024px){
+
+    nav.desktop{
+         display: none;
+    }
+
+    nav.mobile{
+         display: block;
+    }
+
+    div.chamada-header{
+        text-align: center; 
+    }
+
+    div.chamada-header p{
+        display: inline-block;
+    }
+
+    div.chamada-header input[type=email]{
+        margin-bottom: 10px;
+    }
+
+    .box-depoimento{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        max-width:506px;
+        background: white;
+    }  
+}
+
+@media screen and(max-width: 768px){
+    .texto-descricao{
+        width: 100%;
+        display: block;
+        float: none;
+    }
+
+    section.descricao-danki2 img{
+        float: left;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+
+    .box-servicos{
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+    }
+}   
